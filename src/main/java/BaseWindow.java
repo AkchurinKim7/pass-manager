@@ -3,7 +3,11 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.io.*;
+import java.security.*;
 import java.util.*;
+
+import Crypto.Aes256Class;
+import javax.crypto.Cipher;
 
 public class BaseWindow {
 
@@ -14,12 +18,16 @@ public class BaseWindow {
     public static JTable dbTable = new JTable();
     public static DefaultTableModel dtm;
     public static String filePath = "passwords.txt";
+    public static Aes256Class aes256 = new Aes256Class();
+
 
     public static void baseWindow() throws Exception {
 
         mainPanel();
 
         addEntry.addActionListener(e -> addNewEntry());
+
+        ///changeEntry.addActionListener(e -> saveChangingEntry());
 
         deleteEntry.addActionListener(e -> deleteThisEntry());
 
@@ -43,6 +51,10 @@ public class BaseWindow {
         addEntry = new JButton("Add New Entry");
         addEntry.setBounds(20, 20, 150, 40);
         panel.add(addEntry);
+
+        /*changeEntry = new JButton("Save Changing Entry");
+        changeEntry.setBounds(20, 75, 150, 40);
+        panel.add(changeEntry);*/
 
         deleteEntry = new JButton("Delete Entry");
         deleteEntry.setBounds(20, 75, 150, 40);
@@ -126,13 +138,12 @@ public class BaseWindow {
 
         /// Добавление строчки в файл
         addButton.addActionListener(e -> {
-            jf.setVisible(false);
             if (!(password.getText().equals("")) && (!login.getText().equals("")) && (!resource.getText().equals(""))) {
                 try {
                     FileWriter writer = new FileWriter(filePath, true);
                     BufferedWriter bufferWriter = new BufferedWriter(writer);
-                    bufferWriter.write(resource.getText() + " " + login.getText() + " "
-                            + password.getText() + System.getProperty("line.separator"));
+                    bufferWriter.write(Arrays.toString(encryption(resource.getText())) + " " + Arrays.toString(encryption(login.getText())) + " "
+                            + Arrays.toString(encryption(password.getText())) + System.getProperty("line.separator"));
                     bufferWriter.close();
                     String[] newRow = {resource.getText(), login.getText(), password.getText()};
                     dtm.addRow(newRow);
@@ -156,30 +167,63 @@ public class BaseWindow {
     }
 
     public static void deleteEntry() {
-
         int sr = dbTable.getSelectedRow();
-        System.out.println(sr);
 
-        if (sr != -1) {
-            List<String> entry = new ArrayList<>();
+        List<String> entry = new ArrayList<>();
 
-            try (Scanner scan = new Scanner(new File(filePath))) {
-                while (scan.hasNextLine()) {
-                    entry.add(scan.nextLine());
-                }
-            } catch (FileNotFoundException e1) {
-                e1.printStackTrace();
+        try (Scanner scan = new Scanner(new File(filePath))) {
+            while (scan.hasNextLine()) {
+                entry.add(scan.nextLine());
             }
+        } catch (FileNotFoundException e1) {
+            e1.printStackTrace();
+        }
 
-            entry.remove(sr);
-            dtm.removeRow(sr);
-            dbTable.setModel(dtm);
+        entry.remove(sr);
+        dtm.removeRow(sr);
+        dbTable.setModel(dtm);
+
+        Writer writer = null;
+        try {
+            writer = new FileWriter(filePath, false);
+            for (String line : entry) {
+                writer.write(line);
+                writer.write(System.getProperty("line.separator"));
+            }
+            writer.flush();
+        } catch (Exception e2) {
+            if (writer != null) {
+                try {
+                    writer.close();
+                } catch (IOException ignored) {
+                }
+            }
+        }
+    }
+
+
+    //// Не реализована в полной мере потому что не нашли решения для ограничение на ввод в JTable
+    /* Сохранение изменений записи
+    public static void saveChangingEntry() {
+        int selection = JOptionPane.showConfirmDialog(null, "Save changes?",
+                "Saving changes", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+        if (selection == JOptionPane.YES_OPTION) {
+
+            List<String[]> data = new ArrayList<>();
+
+            for (int i = 0; i < dbTable.getRowCount(); i++) {
+                String resource = dbTable.getModel().getValueAt(i, 0).toString();
+                String login = dbTable.getModel().getValueAt(i, 1).toString();
+                String password = dbTable.getModel().getValueAt(i, 2).toString();
+               data.add(new String[]{encryption(resource).toString() + " " + encryption(login).toString() + " "
+                        + encryption(password).toString()});
+            }
 
             Writer writer = null;
             try {
                 writer = new FileWriter(filePath, false);
-                for (String line : entry) {
-                    writer.write(line);
+                for (String[] line : data) {
+                    writer.write(line[0] + " " + line[1] + " " + line[2]);
                     writer.write(System.getProperty("line.separator"));
                 }
                 writer.flush();
@@ -191,27 +235,23 @@ public class BaseWindow {
                     }
                 }
             }
-        } else {
-            JOptionPane pane = new JOptionPane();
-            JOptionPane.showMessageDialog(pane, "Please, select an entry to delete");
-            pane.setSize(100, 100);
-            pane.setVisible(false);
         }
     }
+*/
 
 
     /// Смена МастерПароля
     public static void changeMasterPass() {
-        JFrame jf = new JFrame("Change MasterPass");
-        jf.setSize(340, 130);
-        jf.setResizable(false);
-        jf.setVisible(true);
-        jf.setLocationRelativeTo(null);
-        jf.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+        JFrame jf1 = new JFrame("Change MasterPass");
+        jf1.setSize(340, 130);
+        jf1.setResizable(false);
+        jf1.setVisible(true);
+        jf1.setLocationRelativeTo(null);
+        jf1.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
 
         JPanel changePanel = new JPanel();
         changePanel.setLayout(null);
-        jf.getContentPane().add(changePanel);
+        jf1.getContentPane().add(changePanel);
 
         JLabel resLabel = new JLabel("Enter Old MasterPass:");
         resLabel.setBounds(40, -70, 200, 200);
@@ -226,8 +266,9 @@ public class BaseWindow {
         changePanel.add(okButton);
 
         okButton.addActionListener(e1 -> {
+
             if (Verify.verify(password.getText())) {
-                jf.setVisible(false);
+                jf1.setVisible(false);
                 enterNewMasterPass();
             } else {
                 JOptionPane pane = new JOptionPane();
@@ -259,16 +300,6 @@ public class BaseWindow {
         JTextField newPass = new JTextField(15);
         newPass.setBounds(180, 20, 140, 20);
         changePanel1.add(newPass);
-        ///Ограничение на ввод
-        newPass.addKeyListener(new KeyAdapter() {
-            public void keyTyped(KeyEvent ke) {
-                char kchr = ke.getKeyChar();
-                if (kchr < 48 || kchr > 122 || (kchr > 90 && kchr < 97)) {
-                    ke.consume();
-                }
-
-            }
-        });
 
         JButton okButton = new JButton("Save");
         okButton.setBounds(120, 55, 100, 30);
@@ -338,43 +369,31 @@ public class BaseWindow {
         }
     }
 
-}
 
-
-
-//// Не реализована в полной мере потому что не нашли решения для ограничение на ввод в JTable
-    /* Сохранение изменений записи
-    public static void saveChangingEntry() {
-        int selection = JOptionPane.showConfirmDialog(null, "Save changes?",
-                "Saving changes", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
-        if (selection == JOptionPane.YES_OPTION) {
-
-            List<String[]> data = new ArrayList<>();
-
-            for (int i = 0; i < dbTable.getRowCount(); i++) {
-                String resource = dbTable.getModel().getValueAt(i, 0).toString();
-                String login = dbTable.getModel().getValueAt(i, 1).toString();
-                String password = dbTable.getModel().getValueAt(i, 2).toString();
-               data.add(new String[]{encryption(resource).toString() + " " + encryption(login).toString() + " "
-                        + encryption(password).toString()});
-            }
-
-            Writer writer = null;
-            try {
-                writer = new FileWriter(filePath, false);
-                for (String[] line : data) {
-                    writer.write(line[0] + " " + line[1] + " " + line[2]);
-                    writer.write(System.getProperty("line.separator"));
-                }
-                writer.flush();
-            } catch (Exception e2) {
-                if (writer != null) {
-                    try {
-                        writer.close();
-                    } catch (IOException ignored) {
-                    }
-                }
-            }
+    /// Шифрование AES 256
+    public static byte[] encryption(String mes){
+        //Массив для соли
+        byte[] salt = new byte[8];
+        byte[] shifr = new byte[0];
+        //Выполнение операцию 10 раз
+        for (int i = 0; i < 10; i++) {
+            //Генерация соли
+            SecureRandom random = new SecureRandom();
+            random.nextBytes(salt);
+            //Преобразование исходного текста в поток байт и добавление полученной соли
+            byte[] srcMessage = mes.getBytes();
+            byte[] fullsrcMessage = new byte[srcMessage.length + 8];
+            System.arraycopy(srcMessage, 0, fullsrcMessage, 0, srcMessage.length);
+            System.arraycopy(salt, 0, fullsrcMessage, srcMessage.length, salt.length);
+            //Шифрование
+            shifr = aes256.makeAes(fullsrcMessage, Cipher.ENCRYPT_MODE);
         }
+        return (shifr);
     }
-*/
+
+    /// Дешифрование
+    public static String decryption(byte[] input){
+        byte[] src = aes256.makeAes(input, Cipher.DECRYPT_MODE);
+        return (new String(src));
+    }
+}
