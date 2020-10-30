@@ -32,6 +32,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/BaseWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BaseWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Crypto/Aes256Class.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ReadWriteModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReadWriteModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseWindowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseWindowTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/BaseWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BaseWindow$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/BaseWindow$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BaseWindow$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/BaseWindow$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BaseWindow$3.class" afterDir="false" />
@@ -48,6 +49,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -80,12 +82,22 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunManager" selected="JUnit.BaseWindowTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -237,28 +249,28 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="515" y="62" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1603535149921" />
-    <state width="1323" height="208" key="GridCell.Tab.0.bottom" timestamp="1604055454429">
+    <state width="1323" height="32" key="GridCell.Tab.0.bottom" timestamp="1604067768052">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="208" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1604055454429" />
+    <state width="1323" height="32" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1604067768052" />
     <state width="1556" height="126" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1280.1024@0.0.1600.860" timestamp="1603199687018" />
     <state width="610" height="212" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1280.1024@1600.0.1280.1024" timestamp="1603148105747" />
-    <state width="1323" height="208" key="GridCell.Tab.0.center" timestamp="1604055454429">
+    <state width="1323" height="32" key="GridCell.Tab.0.center" timestamp="1604067768052">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="208" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1604055454429" />
+    <state width="1323" height="32" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1604067768052" />
     <state width="1556" height="126" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1280.1024@0.0.1600.860" timestamp="1603199687018" />
     <state width="610" height="212" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1280.1024@1600.0.1280.1024" timestamp="1603148105747" />
-    <state width="1323" height="208" key="GridCell.Tab.0.left" timestamp="1604055454429">
+    <state width="1323" height="32" key="GridCell.Tab.0.left" timestamp="1604067768052">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="208" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1604055454429" />
+    <state width="1323" height="32" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1604067768052" />
     <state width="1556" height="126" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1280.1024@0.0.1600.860" timestamp="1603199687018" />
     <state width="610" height="212" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1280.1024@1600.0.1280.1024" timestamp="1603148105747" />
-    <state width="1323" height="208" key="GridCell.Tab.0.right" timestamp="1604055454429">
+    <state width="1323" height="32" key="GridCell.Tab.0.right" timestamp="1604067768052">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="208" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1604055454429" />
+    <state width="1323" height="32" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1604067768052" />
     <state width="1556" height="126" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1280.1024@0.0.1600.860" timestamp="1603199687018" />
     <state width="610" height="212" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1280.1024@1600.0.1280.1024" timestamp="1603148105747" />
     <state x="213" y="19" key="Maven.ArtifactSearchDialog" timestamp="1604002629328">
@@ -283,6 +295,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="347" y="52" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1366.728@0.0.1366.728" timestamp="1603715884295" />
+    <state x="480" y="126" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1604068315169">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="480" y="126" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728@0.0.1366.728" timestamp="1604068315169" />
     <state x="462" y="77" key="git4idea.branch.GitSmartOperationDialog" timestamp="1604057546270">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
