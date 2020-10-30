@@ -128,21 +128,26 @@ public class BaseWindow {
         addButton.addActionListener(e -> {
             jf.setVisible(false);
             if (!(password.getText().equals("")) && (!login.getText().equals("")) && (!resource.getText().equals(""))) {
-                try {
-                    FileWriter writer = new FileWriter(filePath, true);
-                    BufferedWriter bufferWriter = new BufferedWriter(writer);
-                    bufferWriter.write(resource.getText() + " " + login.getText() + " "
-                            + password.getText() + System.getProperty("line.separator"));
-                    bufferWriter.close();
-                    String[] newRow = {resource.getText(), login.getText(), password.getText()};
-                    dtm.addRow(newRow);
-                } catch (IOException e1) {
-                    System.out.println(e1);
-                } catch (Exception exception) {
-                    exception.printStackTrace();
-                }
+                writeString(resource.getText() + " " + login.getText() + " "
+                        + password.getText() + System.getProperty("line.separator"));
+                String[] newRow = {resource.getText(), login.getText(), password.getText()};
+                dtm.addRow(newRow);
             }
         });
+    }
+
+    ///запись в файл
+    public static void writeString(String string){
+        try {
+            FileWriter writer = new FileWriter(filePath, true);
+            BufferedWriter bufferWriter = new BufferedWriter(writer);
+
+            bufferWriter.write(string + System.getProperty("line.separator"));
+            bufferWriter.close();
+        } catch (IOException e1) {
+            System.out.println(e1);
+        }
+
     }
 
 
