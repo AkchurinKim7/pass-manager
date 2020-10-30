@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:github" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:github" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:github/crypto" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a9808efc-4c16-4559-8c87-da3933005520" name="Default Changelist" comment="Попытка использования криптографического шифрования">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/passwords.txt" beforeDir="false" afterPath="$PROJECT_DIR$/passwords.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BaseWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BaseWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Crypto/Aes256Class.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ReadWriteModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReadWriteModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/BaseWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BaseWindow$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/BaseWindow$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BaseWindow$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/BaseWindow$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BaseWindow$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/BaseWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BaseWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Crypto/Aes256Class.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/StorPass.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ReadWriteModule.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ReadWriteModule.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="crypto" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1j77wPNACMKdtCxEf1JLLKyTZZe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="StorPass" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Kim\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a9808efc-4c16-4559-8c87-da3933005520" name="Default Changelist" comment="" />
+      <created>1603143513842</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603143513842</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1603912773102</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603912773102</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial commit">
+      <created>1603912792195</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603912792195</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Добавлена функция удаления записи">
+      <created>1603968660981</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603968661000</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Добавлена функция создания новой записи">
+      <created>1603973952386</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603973952417</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Попытка использования криптографического шифрования">
+      <created>1604033411777</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604033411777</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Попытка использования криптографического шифрования">
+      <created>1604053652929</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604053652929</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="github/crypto" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Добавлена функция удаления записи" />
+    <MESSAGE value="Добавлена функция создания новой записи" />
+    <MESSAGE value="Попытка использования криптографического шифрования" />
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="568" y="157" width="230" height="344" key="#Notifications" timestamp="1604056477768">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="568" y="157" width="230" height="344" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1604056477768" />
+    <state x="128" y="0" key="#Project_Structure" timestamp="1604065824127">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="128" y="0" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1604065824127" />
+    <state x="150" y="7" key="#Project_Structure/0.0.1600.860/1600.0.1280.1024@0.0.1600.860" timestamp="1603190898020" />
+    <state x="1720" y="85" key="#Project_Structure/0.0.1600.860/1600.0.1280.1024@1600.0.1280.1024" timestamp="1603146298283" />
+    <state x="1719" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603146431296">
+      <screen x="1600" y="0" width="1280" height="1024" />
+    </state>
+    <state x="1719" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860/1600.0.1280.1024@1600.0.1280.1024" timestamp="1603146431296" />
+    <state x="530" y="176" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1603193437956">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="530" y="176" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1600.860/1600.0.1280.1024@0.0.1600.860" timestamp="1603193437956" />
+    <state x="495" y="155" key="FileChooserDialogImpl" timestamp="1604056280297">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="495" y="155" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1604056280297" />
+    <state x="580" y="183" key="FileChooserDialogImpl/0.0.1600.860/1600.0.1280.1024@0.0.1600.860" timestamp="1603144930144" />
+    <state x="561" y="262" key="Github.ShareDialog" timestamp="1604056639082">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="561" y="262" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1604056639082" />
+    <state x="515" y="62" key="Github.UntrackedFilesDialog" timestamp="1603535149921">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="515" y="62" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1603535149921" />
+    <state width="1323" height="208" key="GridCell.Tab.0.bottom" timestamp="1604055454429">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="208" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1604055454429" />
+    <state width="1556" height="126" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1280.1024@0.0.1600.860" timestamp="1603199687018" />
+    <state width="610" height="212" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1280.1024@1600.0.1280.1024" timestamp="1603148105747" />
+    <state width="1323" height="208" key="GridCell.Tab.0.center" timestamp="1604055454429">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="208" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1604055454429" />
+    <state width="1556" height="126" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1280.1024@0.0.1600.860" timestamp="1603199687018" />
+    <state width="610" height="212" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1280.1024@1600.0.1280.1024" timestamp="1603148105747" />
+    <state width="1323" height="208" key="GridCell.Tab.0.left" timestamp="1604055454429">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="208" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1604055454429" />
+    <state width="1556" height="126" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1280.1024@0.0.1600.860" timestamp="1603199687018" />
+    <state width="610" height="212" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1280.1024@1600.0.1280.1024" timestamp="1603148105747" />
+    <state width="1323" height="208" key="GridCell.Tab.0.right" timestamp="1604055454429">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="208" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1604055454429" />
+    <state width="1556" height="126" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1280.1024@0.0.1600.860" timestamp="1603199687018" />
+    <state width="610" height="212" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1280.1024@1600.0.1280.1024" timestamp="1603148105747" />
+    <state x="213" y="19" key="Maven.ArtifactSearchDialog" timestamp="1604002629328">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="213" y="19" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1604002629328" />
+    <state x="7" y="0" key="SettingsEditor" timestamp="1604057483097">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="7" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1604057483097" />
+    <state x="280" y="3" key="SettingsEditor/0.0.1600.860/1600.0.1280.1024@0.0.1600.860" timestamp="1603191372997" />
+    <state x="1824" y="4" key="SettingsEditor/0.0.1600.860/1600.0.1280.1024@1600.0.1280.1024" timestamp="1603147989047" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1604056404885">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1604056404885" />
+    <state x="499" y="142" key="chooseDestDirectoryDialog" timestamp="1604002122066">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="499" y="142" key="chooseDestDirectoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1604002122066" />
+    <state x="347" y="52" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1603715884295">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="347" y="52" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1366.728@0.0.1366.728" timestamp="1603715884295" />
+    <state x="462" y="77" key="git4idea.branch.GitSmartOperationDialog" timestamp="1604057546270">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="462" y="77" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.728@0.0.1366.728" timestamp="1604057546270" />
+    <state x="519" y="225" key="git4idea.rebase.GitRebaseDialog" timestamp="1604056763645">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="519" y="225" key="git4idea.rebase.GitRebaseDialog/0.0.1366.728@0.0.1366.728" timestamp="1604056763645" />
+    <state x="389" y="121" key="refactoring.ChangeSignatureDialog" timestamp="1604009414545">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="389" y="121" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1604009414545" />
+    <state x="513" y="155" key="svn.repositoryBrowser" timestamp="1604056800990">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="513" y="155" key="svn.repositoryBrowser/0.0.1366.728@0.0.1366.728" timestamp="1604056800990" />
+    <state x="478" y="138" key="svn4idea.import.options" timestamp="1604056305159">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="478" y="138" key="svn4idea.import.options/0.0.1366.728@0.0.1366.728" timestamp="1604056305159" />
+  </component>
+</project>

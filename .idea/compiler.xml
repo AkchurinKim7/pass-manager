@@ -8,7 +8,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="StorPass" />
         <module name="StorPass1" />
-        <module name="PassManager" />
       </profile>
     </annotationProcessing>
   </component>
