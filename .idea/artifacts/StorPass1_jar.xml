@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="StorPass1:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/StorPass1_jar</output-path>
+    <root id="archive" name="StorPass1.jar">
+      <element id="module-output" name="StorPass1" />
+    </root>
+  </artifact>
+</component>
